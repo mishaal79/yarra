@@ -1,0 +1,18 @@
+[package]
+name = "yarra"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+chrono = "0.4"
+dirs = "4.0"
+duckdb = { version = "0.9.2", features = ["bundled"] }
+toml = "0.7"
+
+[dev-dependencies]
+tempfile = "3.3.0"
+assert_cmd = "2.0.12"
+predicates = "2.1.5"
